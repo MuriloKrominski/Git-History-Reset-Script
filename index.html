@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Git History Reset Script - Murilo Krominski."> <!-- Title for social media previews --> <!-- 👨🏻‍💻 -->
+    <meta property="og:description" content="Discover the work and projects of Murilo Krominski."> <!-- Description for social media previews --> <!-- 👨🏻‍💻 -->
+    <meta property="og:image" content="https://murilokrominski.github.io/Git-History-Reset-Script/Git-History-Reset-Script.png"> <!-- Image URL for social media previews --> <!-- 👨🏻‍💻 -->
+    <meta property="og:url" content="https://murilokrominski.github.io/Git-History-Reset-Script"> <!-- Page URL for social media previews --> <!-- 👨🏻‍💻 -->
+    <meta name="description" content="Portfolio of Murilo Krominski."> <!-- Short page description for search engines --> <!-- 👨🏻‍💻 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="msapplication-TileColor" content="#0038A8">
+    <meta name="theme-color" content="#FFFFFF">
+
+<!-- https://murilokrominski.github.io/Git-History-Reset-Script - Git History Reset Script --> <!-- 👨🏻‍💻 -->
+<title>Git History Reset Script - Murilo Krominski</title> <!-- 👨🏻‍💻 -->
+
+<!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://murilokrominski.github.io/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://murilokrominski.github.io/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://murilokrominski.github.io/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="https://murilokrominski.github.io/favicon_io/site.webmanifest">
+    <link rel="mask-icon" href="https://murilokrominski.github.io/favicon_io/safari-pinned-tab.svg" color="#0038A8">
+</head>
+<!-- Body -->
+<body>
+<!-- Iframe Sponsor -->
+    <iframe src="https://github.com/sponsors/MuriloKrominski/button" title="Sponsor MuriloKrominski" height="32" width=100% style="border: 0; border-radius: 6px;"></iframe>
+    <br>
+    <br>
+<!-- Language selector with flags -->
+<div class="language-selector">
+    <center>
+    <!-- Flag for English (US) -->
+    <a href="" onclick="changeLanguage('en')">
+    <img alt="US flag for language switch" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" style="border-radius: 5px;" width="40" height="auto"/>
+    </a>
+    <!-- Flag for Portuguese (Brazil) -->
+    <a href="" onclick="changeLanguage('pt')">
+    <img alt="Brazilian flag for language switch" src="https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg" style="border-radius: 5px;" width="40" height="auto"/>
+    </a>
+    <!-- Flag for Italian -->
+    <a href="" onclick="changeLanguage('it')">
+    <img alt="Italian flag for language switch" src="https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg" style="border-radius: 5px;" width="40" height="auto"/>
+    </a>
+    <!-- Flag for Spanish (Argentina) -->
+    <a href="" onclick="changeLanguage('es')">
+    <img alt="Argentinian flag for language switch" src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg" style="border-radius: 5px;" width="40" height="auto"/>
+    </a>
+    <!-- Flag for Chinese (Mandarin) -->
+    <a href="" onclick="changeLanguage('zh-CN')">
+    <img alt="Chinese flag for language switch" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg" style="border-radius: 5px;" width="40" height="auto"/>
+    </a>
+    <!-- Flag for Russian -->
+    <a href="" onclick="changeLanguage('ru')">
+    <img alt="Russian flag for language switch" src="https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg" style="border-radius: 5px;" width="40" height="auto"/>
+    </a>
+    <!-- Flag for Hebrew -->
+    <a href="" onclick="changeLanguage('iw')">
+    <img alt="Israeli flag for language switch" src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Israel.svg" style="border-radius: 5px;" width="40" height="auto"/>
+    </a>
+    <!-- Flag for Korean -->
+    <a href="" onclick="changeLanguage('ko')">
+    <img alt="Korean flag for language switch" src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg" style="border-radius: 5px;" width="40" height="auto"/>
+    </a>
+    <!-- Flag for Japanese -->
+    <a href="" onclick="changeLanguage('ja')">
+    <img alt="Japanese flag for language switch" src="https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg" style="border-radius: 5px;" width="40" height="auto"/>
+    </a>
+    <!-- Flag for German -->
+    <a href="" onclick="changeLanguage('de')">
+    <img alt="German flag for language switch" src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" style="border-radius: 5px;" width="40" height="auto"/>
+    </a>
+    <!-- Flag for Hindi -->
+    <a href="" onclick="changeLanguage('hi')">
+    <img alt="Indian flag for language switch" src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" style="border-radius: 5px;" width="40" height="auto"/>
+    </a>
+    <!-- Flag for French -->
+    <a href="" onclick="changeLanguage('fr')">
+    <img alt="French flag for language switch" src="https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg" style="border-radius: 5px;" width="40" height="auto"/>
+    </a>
+    <!-- Flag for Arabic -->
+    <a href="" onclick="changeLanguage('ar')">
+    <img alt="Egyptian flag for language switch" src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg" style="border-radius: 5px;" width="40" height="auto"/>
+    </a>
+    </center>
+</div>
+<!-- Autor -->
+    <hr>
+    <center>
+    <a href="https://murilokrominski.github.io/autor.htm">
+    <img src="https://murilokrominski.github.io/media/avatar.jpeg" alt="autor" style="max-width: 160px; max-height: 160px; width: auto; height: auto;">
+    </a>
+    <br>
+    By <a href="https://murilokrominski.github.io/autor.htm">Murilo Krominski</a>
+    <br>
+    <a href="https://murilokrominski.github.io/autor.htm">
+    <img src="https://img.shields.io/badge/https://murilokrominski.github.io/autor.htm-blue.svg" alt="Autor">
+    </a>
+    <a href="https://murilokrominski.github.io/">
+    <img src="https://img.shields.io/badge/Projects - Repository β (PUBLIC)-orange.svg" alt="Repository β (PUBLIC)">
+    </a>
+    </center>
+    <hr>
+
+
+
+
+<!-- Project Section: Start -->
+<div class="container">
+    <center>
+    <!-- Git History Reset Script -->
+    <h1 id="git-history-reset-script">Git History Reset Script</h1>
+    <!-- Badges -->
+    <div class="badges">
+    <a href="https://github.com/MuriloKrominski/Git-History-Reset-Script/stargazers"><img src="https://img.shields.io/github/stars/MuriloKrominski/Git-History-Reset-Script?style=flat&logo=github&color=black" alt="Star this Repo"></a>
+    <a href="https://github.com/MuriloKrominski/Git-History-Reset-Script/graphs/Contributors"><img src="https://img.shields.io/github/contributors/MuriloKrominski/Git-History-Reset-Script" alt="GitHub Contributors"></a>
+    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
+    <a href="https://raw.githubusercontent.com/murilokrominski/Git-History-Reset-Script/main/reset_git_history_with_delete_master.sh" download><img src="https://img.shields.io/badge/Download-Script-green.svg" alt="Download Script"></a>
+    <a href="https://github.com/sponsors/MuriloKrominski" target="_blank"><img src="https://img.shields.io/badge/Sponsor-❤-ff69b4?style=flat&logo=github&logoColor=white" alt="Sponsor this project"></a>
+    </div>
+    <!-- Description -->
+    <table align="center" style="max-width: 640px; width: 100%; height: auto;" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+    <td>
+    <p style="text-align: justify;">
+    The <b>Git History Reset Script</b> is a tool designed to reset commit history in Git repositories, offering a fresh start without traces of previous versions.
+    </p>
+    <p style="text-align: justify;">
+    Ideal for developers needing to hide sensitive information or reorganize repository history, this script provides a quick, secure, and efficient way to wipe the history while preserving project content.
+    </p>
+    <p style="text-align: justify;">
+    With a straightforward interface, Git History Reset Script ensures security and integrity, making it the perfect choice for freelancers, collaborative development teams, and those managing public repositories, delivering hassle-free repository management.
+    </p>
+    </td>
+    </tr>
+    </table>
+    </center>
+    <!-- Process -->
+    <center>
+    <img src="https://raw.githubusercontent.com/MuriloKrominski/Git-History-Reset-Script/refs/heads/main/process.svg" alt="process" style="max-width: 640px; width: 100%; height: auto;">
+    </center>
+    <!-- Key Features -->
+    <h2>🚀 Key Features:</h2>
+    <ul>
+    <li><strong>Reset commit history</strong>: The script removes all previous commit history and restarts the repository from scratch.</li>
+    <li><strong>Rename the main branch</strong>: Automatically renames the main branch to <code>main</code>.</li>
+    <li><strong>Push force</strong>: After resetting, it force-pushes the new state of the repository to the remote.</li>
+    </ul>
+    <!-- Use Cases -->
+    <h2>🎯 Use Cases:</h2>
+    <ul>
+    <li><strong>History cleanup</strong>: When you have a repository with too many unnecessary commits or want to start fresh.</li>
+    <li><strong>Migration from older standards</strong>: Efficiently switch from the <code>master</code> branch to <code>main</code>.</li>
+    <li><strong>Repository simplification</strong>: When you need to simplify the commit structure of a public or private project.</li>
+    </ul>
+    <!-- Repository Structure -->
+    <h2>📂 Repository Structure:</h2>
+    <pre>
+.
+├── .github/                 # GitHub configuration files
+├── README.md                # Project documentation
+├── reset_git_history.sh     # Script to reset commit history
+└── LICENSE                  # Project license
+    </pre>
+    <!-- How to Use -->
+    <h2>🔧 How to Use:</h2>
+    <ol>
+    Download or clone this repository to your local system.
+    <pre><code class="language-bash">
+        git clone https://github.com/MuriloKrominski/Reset-Git-History-Script.git
+    </code></pre>
+    Navigate into the repository:
+    <pre><code class="language-bash">
+        cd Reset-Git-History-Script
+    </code></pre>
+    Run the script:
+    <pre><code class="language-bash">
+        bash reset_git_history.sh
+    </code></pre>
+    </ol>
+    <!-- Script Code -->
+    <h2>👨🏻‍💻 Script Code [100%]:</h2>
+    <pre><code class="language-bash">
+        #!/bin/bash
+    </code></pre>
+
+    # Check if the current folder is a Git repository:
+    <pre><code class="language-bash">
+        if [ ! -d .git ]; then
+        echo "This directory does not appear to be a Git repository."
+        exit 1
+        fi
+    </code></pre>
+
+    # Ask the user if they really want to remove the commit history:
+    <pre><code class="language-bash">
+        read -p "Are you sure you want to remove the commit history? [y/n] " confirm
+        if [ "$confirm" != "y" ]; then
+        echo "Action canceled."
+        exit 0
+        fi
+    </code></pre>
+
+    # Get the current remote repository:
+    <pre><code class="language-bash">
+        REPO_URL=$(git config --get remote.origin.url)
+
+        if [ -z "$REPO_URL" ]; then
+        echo "Could not find the remote repository. Make sure this repository has 'origin' configured."
+        exit 1
+        fi
+    </code></pre>
+
+    # Remove the commit history:
+    <pre><code class="language-bash">
+        rm -rf .git
+    </code></pre>
+
+    # Initialize a new Git repository:
+    <pre><code class="language-bash">
+        git init
+    </code></pre>
+
+    # Add all files to the new repository:
+    <pre><code class="language-bash">
+        git add .
+    </code></pre>
+
+    # Create the first commit:
+    <pre><code class="language-bash">
+        git commit -m "First commit without previous history"
+    </code></pre>
+
+    # Rename the branch to 'main':
+    <pre><code class="language-bash">
+        git branch -M main
+    </code></pre>
+
+    # Add the remote repository:
+    <pre><code class="language-bash">
+        git remote add origin $REPO_URL
+    </code></pre>
+
+    # Force push to the remote repository:
+    <pre><code class="language-bash">
+        git push --force origin main
+    </code></pre>
+
+    # Ask if the user wants to delete the 'master' branch:
+    <pre><code class="language-bash">
+        read -p "Do you want to delete the 'master' branch on the remote? [y/n] " delete_master
+        if [ "$delete_master" == "y" ]; then
+        git push origin --delete master
+        echo "Master branch deleted on the remote repository."
+        else
+        echo "Master branch was not deleted."
+        fi
+
+        echo "Commit history removed and new repository pushed to GitHub on the 'main' branch."
+    </code></pre>
+
+    # Pause the script to allow the user to see the result:
+    <pre><code class="language-bash">
+        read -p "Press any key to exit..."
+    </code></pre>
+    <!-- Warning -->
+    <h2>⚠️ Warning:</h2>
+    <p>This script <strong>force-pushes</strong> changes to your remote repository. Make sure you understand the implications before using it, as it can overwrite your repository’s history permanently.</p>
+    <!-- License -->
+    <h2>📜 License:</h2>
+    <p>This project is licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+    <!-- Collaborations -->
+    <h2>🤝🏻 Collaborations:</h2>
+    <blockquote>Anyone can clone and contribute with improvements to the public beta version "<a href="https://murilokrominski.github.io/">β (PUBLIC)</a>".</blockquote>
+    <!-- Sponsorships -->
+    <h2>💖 Sponsorships:</h2>
+    <blockquote>
+    <strong>
+        Financially support open-source code and help build a more collaborative and innovative future, where knowledge is shared, and progress is collective.
+        <br>
+        <br>
+        Your sponsorship helps developers, like me, dedicate more time to developing new projects, new features, bug fixes, and keeping everything up to date.
+        </strong>
+    </blockquote>
+</div>
+<hr>
+<!-- Project Section: End -->
+
+
+
+
+<!-- Sponsor -->
+    <div class="iframe-container">
+    <iframe id="dynamic-iframe" width="100%" height="200" src="https://github.com/sponsors/MuriloKrominski/card" title="Sponsor MuriloKrominski"></iframe>
+    </div>
+    <iframe src="https://github.com/sponsors/MuriloKrominski/button" title="Sponsor MuriloKrominski" height="32" width=100% style="border: 0; border-radius: 6px;"></iframe>
+<!-- Footer Section -->
+    <footer>
+    <p><a href="https://github.com/MuriloKrominski">&copy; 2024 Murilo Krominski. All rights reserved.</a></p>
+    <p><a href="https://github.com/MuriloKrominski">Created with ❤️ and maintained by Murilo Krominski.</a></p>
+    </footer>
+    
+<!-- Custom JavaScript file for additional functionalities -->
+    <script src="https://murilokrominski.github.io/scripts.js"></script>
+<!-- Highlight.js library for syntax highlighting of code blocks -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+<!-- Initialize Highlight.js for all code blocks -->
+    <script>hljs.highlightAll();</script> 
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+<!-- Google Translate Element (invisible) -->
+    <div id="google_translate_element" style="visibility: hidden">
+    </div>
+</body>
+</html>
